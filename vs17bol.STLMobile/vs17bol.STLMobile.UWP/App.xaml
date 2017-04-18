@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="vs17bol.STLMobile.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:vs17bol.STLMobile.UWP"
+    RequestedTheme="Light">
+
+</Application>

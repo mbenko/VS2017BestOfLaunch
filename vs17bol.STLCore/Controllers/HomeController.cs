@@ -18,10 +18,14 @@ namespace vs17bol.STLCore.Controllers
         {
             ViewData["Message"] = "Your application description page.";
 
-            var MyClient = new HttpClient();
-            var rc = MyClient.GetAsync(MySettings.API_URL + "/api/values");
+            var client = new HttpClient();
+            var url = MySettings.API_URL + "/api/values";
 
-            ViewData["Message"] = rc.Result;
+            var response = await client.GetAsync(url);
+
+            var json = response.Content.ReadAsStringAsync();
+
+            ViewData["Message"] = $"Called API - {json.Result}";
 
             return View();
         }
