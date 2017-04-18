@@ -15,6 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vs17bol.STLMobile.Android",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vs17bol.STLMobile.UWP", "vs17bol.STLMobile\vs17bol.STLMobile.UWP\vs17bol.STLMobile.UWP.csproj", "{0E5BE821-31EA-4584-B6F5-AB2642A21437}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deck", "Deck", "{2D54DEA8-5BB2-40C5-8662-F48AEBAB18DD}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\OneDrive\Content\MSFT\VS2017VS17BOL-Chicago.pdf = ..\..\..\..\..\..\OneDrive\Content\MSFT\VS2017VS17BOL-Chicago.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		vs17bol.STLMobile\vs17bol.STLMobile\vs17bol.STLMobile.projitems*{2a9cf834-36ed-49e4-bbac-9d5c8f12e374}*SharedItemsImports = 13
