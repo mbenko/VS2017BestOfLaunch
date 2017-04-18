@@ -3,18 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:vs17bol.STLMobile"
              BindingContext="{x:Static local:MyViewModelLocator.MyDataVM}"
-             x:Class="vs17bol.STLMobile.MainPage">
+             BackgroundColor="Gray"  x:Class="vs17bol.STLMobile.MainPage">
 
-    <StackLayout Margin="20" Spacing="20" >
+    <StackLayout Margin="20" Spacing="10" >
 
         <Label  Text="Welcome to Xamarin Forms!" TextColor="Navy"
                VerticalOptions="Center"  FontSize="25"
                HorizontalOptions="Center" />
 
 
-        <Label Text="Enter your name:" TextColor="Black"/>
+        <Label Text="Enter your Name:" TextColor="Black"/>
 
 
+        
         <StackLayout Orientation="Horizontal">
             <Entry Text="{Binding name}" WidthRequest="250" x:Name="txtName" TextColor="Black" BackgroundColor="Silver"/>
 
