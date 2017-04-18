@@ -1,0 +1,32 @@
+version: '2'
+
+services:
+  vs17bol.stlcore:
+    image: vs17bol.stlcore:dev
+    build:
+      args:
+        source: ${DOCKER_BUILD_SOURCE}
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+    volumes:
+      - ./vs17bol.STLCore:/app
+      - ~/.nuget/packages:/root/.nuget/packages:ro
+      - ~/clrdbg:/clrdbg:ro
+    entrypoint: tail -f /dev/null
+    labels:
+      - "com.microsoft.visualstudio.targetoperatingsystem=linux"
+
+  vs17bol.stlapi:
+    image: vs17bol.stlapi:dev
+    build:
+      args:
+        source: ${DOCKER_BUILD_SOURCE}
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+    volumes:
+      - ./vs17bol.StlAPI:/app
+      - ~/.nuget/packages:/root/.nuget/packages:ro
+      - ~/clrdbg:/clrdbg:ro
+    entrypoint: tail -f /dev/null
+    labels:
+      - "com.microsoft.visualstudio.targetoperatingsystem=linux"

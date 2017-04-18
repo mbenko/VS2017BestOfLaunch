@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  vs17bol.stlcore:
+    image: vs17bol.stlcore
+    build:
+      context: ./vs17bol.STLCore
+      dockerfile: Dockerfile
+
+  vs17bol.stlapi:
+    image: vs17bol.stlapi
+    build:
+      context: ./vs17bol.StlAPI
+      dockerfile: Dockerfile

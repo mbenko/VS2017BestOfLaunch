@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  vs17bol.stlcore:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+
+  vs17bol.stlapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
